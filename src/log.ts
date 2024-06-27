@@ -1,17 +1,17 @@
 
-export type talk = {
+export interface talk {
     head: string,
     body: string,
 }
 
-export type LogItem = {
+export interface LogItem {
 
     title: string,
     talkItems: talk[],
 
 }
 
-export type LogCollection = {
+export interface LogCollection {
 
     logItems: LogItem[],
 

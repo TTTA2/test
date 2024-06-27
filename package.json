@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "flowbite-svelte": "^0.46.11",
+    "flowbite-svelte-icons": "^1.6.1",
     "monaco-editor": "^0.50.0"
   }
 }

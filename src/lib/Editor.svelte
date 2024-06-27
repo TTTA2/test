@@ -1,12 +1,24 @@
-<script>
+<script lang="ts">
 
     import { Button } from "flowbite-svelte";
     import MonacoEditor from "./MonacoEditor.svelte";
+    import type { LogCollection } from "../log";
+
+    export let logCollection: LogCollection = {
+        logItems: []
+    };
+
+
 
 </script>
 
 <div class="editorContainer">
-    <Button color="alternative">Alternative</Button>
+    {#each logCollection.logItems as l }
+        <div>
+            {l.title}
+        </div>
+    {/each}
+    <!-- <Button color="alternative">Alternative</Button> -->
     <MonacoEditor></MonacoEditor>
 </div>
 
